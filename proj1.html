@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tradd Thomas - CPSC 3750 Project 1</title>
+	<script type="text/javascript" src="proj1.js">
+	</script>
+</head>
+<body>
+	<audio id="myaudio" src="queen.mp3"></audio>
+	<p>Titles</p>
+	<ol>
+			<li>Intro <button id="btn-0" onclick="pauseplaysegment(0,48)">Play</button></li>
+			<li>Ballad <button id="btn-1" onclick="pauseplaysegment(48,156)">Play</button></li>
+			<li>Solo <button id="btn-2" onclick="pauseplaysegment(156,184)">Play</button></li>
+			<li>Opera <button id="btn-3" onclick="pauseplaysegment(184,246)">Play</button></li>
+			<li>Rock <button id="btn-4" onclick="pauseplaysegment(246,293)">Play</button></li>
+			<li>Outro <button id="btn-5" onclick="pauseplaysegment(293,354)">Play</button></li>
+	</ol>
+	<br>
+	<p>Audio track: <i>Bohemian Rhapsody</i> by Queen</p>
+	<p>Currently at: <a id="currTime">0:00</a></p>
+	<br>
+	<button id="btn-pause" onclick="pauseplay()">Stopped</button>
+	<button id="btn-rewind" onclick="rewind()">Rewind</button>
+	<button id="btn-forward" onclick="forward()">Forward</button>
+	<br>
+	
+	<div>
+	</div>
+</body>
+</html>
